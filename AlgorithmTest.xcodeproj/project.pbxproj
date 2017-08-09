@@ -16,6 +16,8 @@
 		041F21901EE6ED98002CE54D /* scanlens.txt in Resources */ = {isa = PBXBuildFile; fileRef = 041F218F1EE6ED98002CE54D /* scanlens.txt */; };
 		041F21981EE80FD5002CE54D /* AlgorithmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 041F21971EE80FD5002CE54D /* AlgorithmTests.m */; };
 		041F21A01EE8100E002CE54D /* ScanLensTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 041F219F1EE8100E002CE54D /* ScanLensTest.m */; };
+		04AD24591F3AADB200E5BBB2 /* SwiftTestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD24581F3AADB200E5BBB2 /* SwiftTestClass.swift */; };
+		04AD245B1F3AB03900E5BBB2 /* SwiftTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD245A1F3AB03900E5BBB2 /* SwiftTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,9 @@
 		041F21971EE80FD5002CE54D /* AlgorithmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgorithmTests.m; sourceTree = "<group>"; };
 		041F21991EE80FD5002CE54D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		041F219F1EE8100E002CE54D /* ScanLensTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanLensTest.m; sourceTree = "<group>"; };
+		04AD24571F3AADB100E5BBB2 /* AlgorithmTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AlgorithmTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		04AD24581F3AADB200E5BBB2 /* SwiftTestClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTestClass.swift; sourceTree = "<group>"; };
+		04AD245A1F3AB03900E5BBB2 /* SwiftTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,7 @@
 		041F21761EE6ED0D002CE54D /* AlgorithmTest */ = {
 			isa = PBXGroup;
 			children = (
+				04AD24561F3AAD2400E5BBB2 /* TestClass */,
 				041F218E1EE6ED8E002CE54D /* Resource */,
 				041F217A1EE6ED0D002CE54D /* AppDelegate.h */,
 				041F217B1EE6ED0D002CE54D /* AppDelegate.m */,
@@ -123,6 +129,16 @@
 				041F21991EE80FD5002CE54D /* Info.plist */,
 			);
 			path = AlgorithmTests;
+			sourceTree = "<group>";
+		};
+		04AD24561F3AAD2400E5BBB2 /* TestClass */ = {
+			isa = PBXGroup;
+			children = (
+				04AD24581F3AADB200E5BBB2 /* SwiftTestClass.swift */,
+				04AD24571F3AADB100E5BBB2 /* AlgorithmTest-Bridging-Header.h */,
+				04AD245A1F3AB03900E5BBB2 /* SwiftTestViewController.swift */,
+			);
+			name = TestClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +191,7 @@
 					041F21731EE6ED0D002CE54D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = LCJ4B5EHS7;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					041F21941EE80FD5002CE54D = {
@@ -231,7 +248,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				041F217F1EE6ED0D002CE54D /* ViewController.m in Sources */,
+				04AD245B1F3AB03900E5BBB2 /* SwiftTestViewController.swift in Sources */,
 				041F217C1EE6ED0D002CE54D /* AppDelegate.m in Sources */,
+				04AD24591F3AADB200E5BBB2 /* SwiftTestClass.swift in Sources */,
 				041F21791EE6ED0D002CE54D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,11 +388,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = LCJ4B5EHS7;
 				INFOPLIST_FILE = AlgorithmTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dcf.iqx.AlgorithmTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AlgorithmTest/AlgorithmTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -381,17 +404,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = LCJ4B5EHS7;
 				INFOPLIST_FILE = AlgorithmTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dcf.iqx.AlgorithmTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AlgorithmTest/AlgorithmTest-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		041F219C1EE80FD5002CE54D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = LCJ4B5EHS7;
 				INFOPLIST_FILE = AlgorithmTests/Info.plist;
@@ -405,6 +432,7 @@
 		041F219D1EE80FD5002CE54D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = LCJ4B5EHS7;
 				INFOPLIST_FILE = AlgorithmTests/Info.plist;
