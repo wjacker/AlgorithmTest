@@ -1,13 +1,13 @@
 //
-//  SubObject+Category.h
+//  SubObject.h
 //  AlgorithmTest
 //
 //  Created by Jack on 22/05/2018.
 //  Copyright © 2018 Jack. All rights reserved.
 //
 
-#import "SubObject.h"
+#import "SuperClass.h"
 
-@interface SubObject(Category)
+@interface SubClass : SuperClass
 
 @end

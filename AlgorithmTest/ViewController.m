@@ -11,7 +11,7 @@
 //#import "ViewController+A.h"
 #import "ViewController+B.h"
 
-#import "FinalObject.h"
+#import "FinalClass.h"
 #import <QuickLook/QuickLook.h>
 
 @interface ViewController ()<QLPreviewControllerDataSource, QLPreviewControllerDelegate>
@@ -25,9 +25,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [FinalObject new];
+    [FinalClass new];
     
-    [FinalObject new];
+    [FinalClass new];
     
 //    [self trace];
     // Do any additional setup after loading the view, typically from a nib.

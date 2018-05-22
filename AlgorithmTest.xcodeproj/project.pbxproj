@@ -20,13 +20,13 @@
 		042F95E71FB185D2007E88AA /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042F95E61FB185C9007E88AA /* QuickLook.framework */; };
 		042F95E91FB18698007E88AA /* test.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 042F95E81FB18698007E88AA /* test.pdf */; };
 		044239271FE0BB7800DCCF99 /* UIViewController+A.m in Sources */ = {isa = PBXBuildFile; fileRef = 044239251FDFDBCC00DCCF99 /* UIViewController+A.m */; };
-		044D1F6D20B3D6C7008ED45B /* SuperObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D1F6C20B3D6C7008ED45B /* SuperObject.m */; };
-		044D1F7020B3D6E1008ED45B /* SubObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D1F6F20B3D6E1008ED45B /* SubObject.m */; };
-		044D1F7320B3D705008ED45B /* FinalObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D1F7220B3D705008ED45B /* FinalObject.m */; };
+		044D1F6D20B3D6C7008ED45B /* SuperClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D1F6C20B3D6C7008ED45B /* SuperClass.m */; };
+		044D1F7020B3D6E1008ED45B /* SubClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D1F6F20B3D6E1008ED45B /* SubClass.m */; };
+		044D1F7320B3D705008ED45B /* FinalClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D1F7220B3D705008ED45B /* FinalClass.m */; };
 		044D1F7420B3D9D8008ED45B /* ViewController+B.m in Sources */ = {isa = PBXBuildFile; fileRef = 04214B9E1FDFD932009C5892 /* ViewController+B.m */; };
 		044D1F7520B3DA1B008ED45B /* ViewController+A.m in Sources */ = {isa = PBXBuildFile; fileRef = 04214B9C1FDFD87F009C5892 /* ViewController+A.m */; };
-		044D1F7820B3DBF0008ED45B /* SuperObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D1F7720B3DBF0008ED45B /* SuperObject+Category.m */; };
-		044D1F7B20B3DC70008ED45B /* SubObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D1F7A20B3DC70008ED45B /* SubObject+Category.m */; };
+		044D1F7820B3DBF0008ED45B /* SuperClass+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D1F7720B3DBF0008ED45B /* SuperClass+Category.m */; };
+		044D1F7B20B3DC70008ED45B /* SubClass+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D1F7A20B3DC70008ED45B /* SubClass+Category.m */; };
 		049AFEEC1F95D444004B0A09 /* StraightInsertionSortTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 049AFEEB1F95D444004B0A09 /* StraightInsertionSortTest.m */; };
 		04AD24591F3AADB200E5BBB2 /* SwiftTestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD24581F3AADB200E5BBB2 /* SwiftTestClass.swift */; };
 		04AD245B1F3AB03900E5BBB2 /* SwiftTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD245A1F3AB03900E5BBB2 /* SwiftTestViewController.swift */; };
@@ -71,16 +71,16 @@
 		042F95E81FB18698007E88AA /* test.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test.pdf; sourceTree = "<group>"; };
 		044239241FDFDBCB00DCCF99 /* UIViewController+A.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+A.h"; sourceTree = "<group>"; };
 		044239251FDFDBCC00DCCF99 /* UIViewController+A.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+A.m"; sourceTree = "<group>"; };
-		044D1F6B20B3D6C7008ED45B /* SuperObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperObject.h; sourceTree = "<group>"; };
-		044D1F6C20B3D6C7008ED45B /* SuperObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperObject.m; sourceTree = "<group>"; };
-		044D1F6E20B3D6E1008ED45B /* SubObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubObject.h; sourceTree = "<group>"; };
-		044D1F6F20B3D6E1008ED45B /* SubObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubObject.m; sourceTree = "<group>"; };
-		044D1F7120B3D705008ED45B /* FinalObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FinalObject.h; sourceTree = "<group>"; };
-		044D1F7220B3D705008ED45B /* FinalObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinalObject.m; sourceTree = "<group>"; };
-		044D1F7620B3DBF0008ED45B /* SuperObject+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SuperObject+Category.h"; sourceTree = "<group>"; };
-		044D1F7720B3DBF0008ED45B /* SuperObject+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SuperObject+Category.m"; sourceTree = "<group>"; };
-		044D1F7920B3DC70008ED45B /* SubObject+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SubObject+Category.h"; sourceTree = "<group>"; };
-		044D1F7A20B3DC70008ED45B /* SubObject+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SubObject+Category.m"; sourceTree = "<group>"; };
+		044D1F6B20B3D6C7008ED45B /* SuperClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperClass.h; sourceTree = "<group>"; };
+		044D1F6C20B3D6C7008ED45B /* SuperClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperClass.m; sourceTree = "<group>"; };
+		044D1F6E20B3D6E1008ED45B /* SubClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubClass.h; sourceTree = "<group>"; };
+		044D1F6F20B3D6E1008ED45B /* SubClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubClass.m; sourceTree = "<group>"; };
+		044D1F7120B3D705008ED45B /* FinalClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FinalClass.h; sourceTree = "<group>"; };
+		044D1F7220B3D705008ED45B /* FinalClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinalClass.m; sourceTree = "<group>"; };
+		044D1F7620B3DBF0008ED45B /* SuperClass+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SuperClass+Category.h"; sourceTree = "<group>"; };
+		044D1F7720B3DBF0008ED45B /* SuperClass+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SuperClass+Category.m"; sourceTree = "<group>"; };
+		044D1F7920B3DC70008ED45B /* SubClass+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SubClass+Category.h"; sourceTree = "<group>"; };
+		044D1F7A20B3DC70008ED45B /* SubClass+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SubClass+Category.m"; sourceTree = "<group>"; };
 		049AFEEB1F95D444004B0A09 /* StraightInsertionSortTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StraightInsertionSortTest.m; sourceTree = "<group>"; };
 		04AD24571F3AADB100E5BBB2 /* AlgorithmTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AlgorithmTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		04AD24581F3AADB200E5BBB2 /* SwiftTestClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTestClass.swift; sourceTree = "<group>"; };
@@ -135,16 +135,16 @@
 				041F218E1EE6ED8E002CE54D /* Resource */,
 				041F217A1EE6ED0D002CE54D /* AppDelegate.h */,
 				041F217B1EE6ED0D002CE54D /* AppDelegate.m */,
-				044D1F6B20B3D6C7008ED45B /* SuperObject.h */,
-				044D1F6C20B3D6C7008ED45B /* SuperObject.m */,
-				044D1F7620B3DBF0008ED45B /* SuperObject+Category.h */,
-				044D1F7720B3DBF0008ED45B /* SuperObject+Category.m */,
-				044D1F6E20B3D6E1008ED45B /* SubObject.h */,
-				044D1F6F20B3D6E1008ED45B /* SubObject.m */,
-				044D1F7920B3DC70008ED45B /* SubObject+Category.h */,
-				044D1F7A20B3DC70008ED45B /* SubObject+Category.m */,
-				044D1F7120B3D705008ED45B /* FinalObject.h */,
-				044D1F7220B3D705008ED45B /* FinalObject.m */,
+				044D1F6B20B3D6C7008ED45B /* SuperClass.h */,
+				044D1F6C20B3D6C7008ED45B /* SuperClass.m */,
+				044D1F7620B3DBF0008ED45B /* SuperClass+Category.h */,
+				044D1F7720B3DBF0008ED45B /* SuperClass+Category.m */,
+				044D1F6E20B3D6E1008ED45B /* SubClass.h */,
+				044D1F6F20B3D6E1008ED45B /* SubClass.m */,
+				044D1F7920B3DC70008ED45B /* SubClass+Category.h */,
+				044D1F7A20B3DC70008ED45B /* SubClass+Category.m */,
+				044D1F7120B3D705008ED45B /* FinalClass.h */,
+				044D1F7220B3D705008ED45B /* FinalClass.m */,
 				042F95E21FB185A2007E88AA /* MyQLPreviewController.h */,
 				042F95E31FB185A2007E88AA /* MyQLPreviewController.m */,
 				044239241FDFDBCB00DCCF99 /* UIViewController+A.h */,
@@ -326,12 +326,12 @@
 				042F95E41FB185A2007E88AA /* MyQLPreviewController.m in Sources */,
 				044D1F7520B3DA1B008ED45B /* ViewController+A.m in Sources */,
 				044D1F7420B3D9D8008ED45B /* ViewController+B.m in Sources */,
-				044D1F7820B3DBF0008ED45B /* SuperObject+Category.m in Sources */,
+				044D1F7820B3DBF0008ED45B /* SuperClass+Category.m in Sources */,
 				044239271FE0BB7800DCCF99 /* UIViewController+A.m in Sources */,
-				044D1F7320B3D705008ED45B /* FinalObject.m in Sources */,
-				044D1F7B20B3DC70008ED45B /* SubObject+Category.m in Sources */,
-				044D1F6D20B3D6C7008ED45B /* SuperObject.m in Sources */,
-				044D1F7020B3D6E1008ED45B /* SubObject.m in Sources */,
+				044D1F7320B3D705008ED45B /* FinalClass.m in Sources */,
+				044D1F7B20B3DC70008ED45B /* SubClass+Category.m in Sources */,
+				044D1F6D20B3D6C7008ED45B /* SuperClass.m in Sources */,
+				044D1F7020B3D6E1008ED45B /* SubClass.m in Sources */,
 				041F217C1EE6ED0D002CE54D /* AppDelegate.m in Sources */,
 				04AD24591F3AADB200E5BBB2 /* SwiftTestClass.swift in Sources */,
 				04E586761F467C9D004C0E67 /* RuntimeClass.swift in Sources */,
