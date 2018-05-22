@@ -21,10 +21,17 @@ class SwiftTestViewController: UIViewController,UITableViewDelegate {
 
         self.showClassRuntime(aClass: SwiftTestViewController.self)
         // Do any additional setup after loading the view.
+        
+        self.methodSwizze(aClass: object_getClass(self), orgSelector: #selector(SwiftTestViewController.viewDidAppear(_:)), swizzeSelector: #selector(SwiftTestViewController.sz_viewDidAppear(_:)))
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        
+        print("F:\(#function) L:\(#line)")
+    }
+    
+    
+    func sz_viewDidAppear(_ animated: Bool) {
+        print("F:\(#function) L:\(#line)")
     }
     
     func testReturnVoidWithId(aId:AnyObject) {
@@ -55,10 +62,10 @@ class SwiftTestViewController: UIViewController,UITableViewDelegate {
         
         for index in 0..<methodNum {
             let method:Method = methodList[Int(index)]!
-            print("methodName:\(method_getName(method))")
+            print("methodName:\(method_getName(method)!)")
             method_getReturnType(method, &dst, MemoryLayout<Int8>.size)
             print("returnType:\(Character(UnicodeScalar(UInt8(dst))))")
-            print("TypeEncoding:\(String(cString:method_getTypeEncoding(method)))")
+            print("TypeEncoding:\(String(cString:method_getTypeEncoding(method)))\n")
         }
         
         print("=====property list=====")
@@ -68,7 +75,21 @@ class SwiftTestViewController: UIViewController,UITableViewDelegate {
         for index in 0..<propertyNum {
             let property:objc_property_t = propertyList[Int(index)]!
             print("propertyName:\(String(cString:property_getName(property)))")
-            print("propertyValue:\(String(cString:property_getAttributes(property)))")
+            print("propertyAttributes:\(String(cString:property_getAttributes(property)))\n")
+        }
+    }
+    
+    func methodSwizze(aClass:AnyClass, orgSelector:Selector, swizzeSelector:Selector) {
+        let orgMethod = class_getClassMethod(aClass, orgSelector)
+        let orgImg = class_getMethodImplementation(aClass, orgSelector)
+        let swizzeMethod = class_getClassMethod(aClass, swizzeSelector)
+        let swizzeImg = class_getMethodImplementation(aClass, swizzeSelector)
+        
+        let didAddMethod = class_addMethod(aClass, orgSelector, swizzeImg, method_getTypeEncoding(swizzeMethod))
+        if(didAddMethod) {
+            class_replaceMethod(aClass, swizzeSelector, method_getImplementation(orgMethod), method_getTypeEncoding(orgMethod))
+        } else {
+            method_exchangeImplementations(orgImg, swizzeImg)
         }
     }
 }
