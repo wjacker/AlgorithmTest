@@ -46,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0417B49620C8F2C80039FB1A /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		041F21741EE6ED0D002CE54D /* AlgorithmTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlgorithmTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		041F21781EE6ED0D002CE54D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		041F217A1EE6ED0D002CE54D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -112,6 +113,7 @@
 		041F216B1EE6ED0C002CE54D = {
 			isa = PBXGroup;
 			children = (
+				0417B49620C8F2C80039FB1A /* MyPlayground.playground */,
 				041F21761EE6ED0D002CE54D /* AlgorithmTest */,
 				041F21961EE80FD5002CE54D /* AlgorithmTests */,
 				041F21751EE6ED0D002CE54D /* Products */,
@@ -142,8 +144,8 @@
 				044D1F6E20B3D6E1008ED45B /* SubClass.h */,
 				044D1F6F20B3D6E1008ED45B /* SubClass.m */,
 				044D1F7920B3DC70008ED45B /* SubClass+Category.h */,
-				044D1F7A20B3DC70008ED45B /* SubClass+Category.m */,
 				044D1F7120B3D705008ED45B /* FinalClass.h */,
+				044D1F7A20B3DC70008ED45B /* SubClass+Category.m */,
 				044D1F7220B3D705008ED45B /* FinalClass.m */,
 				042F95E21FB185A2007E88AA /* MyQLPreviewController.h */,
 				042F95E31FB185A2007E88AA /* MyQLPreviewController.m */,
@@ -477,6 +479,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = LCJ4B5EHS7;
 				INFOPLIST_FILE = AlgorithmTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dcf.iqx.AlgorithmTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -493,6 +496,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = LCJ4B5EHS7;
 				INFOPLIST_FILE = AlgorithmTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dcf.iqx.AlgorithmTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";

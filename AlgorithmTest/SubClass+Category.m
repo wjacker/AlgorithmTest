@@ -10,12 +10,12 @@
 
 @implementation SubClass(Category)
 
-//+(void)load {
-//    NSLog(@"%s", __PRETTY_FUNCTION__);
-//}
-//
-//+(void)initialize {
-//    NSLog(@"%s", __PRETTY_FUNCTION__);
-//}
++(void)load {
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+}
+
++(void)initialize {
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+}
 
 @end

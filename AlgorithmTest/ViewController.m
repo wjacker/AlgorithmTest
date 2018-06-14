@@ -17,17 +17,56 @@
 @interface ViewController ()<QLPreviewControllerDataSource, QLPreviewControllerDelegate>
 
 @property (nonatomic, strong) NSString *target;
+@property (nonatomic, copy) void(^testBlock)();
+
 
 @end
 
+
 @implementation ViewController
+
+NSString *const testStringConst = @"1234";
+NSString const *testConstString = @"1234";
+NSString *testString;
+
+- (void)testMethod {
+//    testStringConst = @"qee";
+    
+    //打印对象的内存地址
+//    NSLog(@"testString 内存地址1：%p",@"1234);
+    
+//    testString = @"sdf";
+    //打印对象的内存地址
+    NSLog(@"testString2 内存地址1：%p",testConstString);
+    
+    testConstString = @"qwe";
+    //打印对象的内存地址
+    NSLog(@"testString2 内存地址1：%p",testConstString);
+    
+    testString = testStringConst;
+//    testString = testConstString;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    NSString *a = [self testMethod];
+    if(0) {
+        NSLog(@"===");
+    } else {
+        NSLog(@"=else=");
+    }
     
-    [FinalClass new];
+    int i = 10;
+    NSLog(@"%i", (i == 10) && 3);
     
-    [FinalClass new];
+//    NSMutableString *mStr = [@"123" mutableCopy];
+//    self.target = mStr;
+//    [mStr appendString:@"456"];
+//    NSLog(@"%@", self.target);
+    
+//    [FinalClass new];
+//    
+//    [FinalClass new];
     
 //    [self trace];
     // Do any additional setup after loading the view, typically from a nib.
@@ -107,16 +146,14 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    if ([QLPreviewController canPreviewItem:[[NSBundle mainBundle] URLForResource:@"test" withExtension:@"pdf"]])
-    {
-        QLPreviewController *previewController = [[QLPreviewController alloc] init];
-        previewController.dataSource = self;
-//        [self presentViewController:previewController animated:YES completion:nil];
-        [self addChildViewController:previewController];
-        [self.view addSubview:previewController.view];
-        [previewController didMoveToParentViewController:self];
-    }
-    
+//    if ([QLPreviewController canPreviewItem:[[NSBundle mainBundle] URLForResource:@"test" withExtension:@"pdf"]])
+//    {
+//        QLPreviewController *previewController = [[QLPreviewController alloc] init];
+//        previewController.dataSource = self;
+//        [self addChildViewController:previewController];
+//        [self.view addSubview:previewController.view];
+//        [previewController didMoveToParentViewController:self];
+//    }
 }
 
 -(NSInteger) numberOfPreviewItemsInPreviewController:(QLPreviewController *)controller
@@ -138,6 +175,5 @@
 //- (void)trace {
 //    NSLog(@"ViewController");
 //}
-
 
 @end
