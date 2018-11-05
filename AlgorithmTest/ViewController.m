@@ -7,14 +7,16 @@
 //
 
 #import "ViewController.h"
-//#import "UIViewController+A.h"
+#import "UIViewController+A.h"
 //#import "ViewController+A.h"
-#import "ViewController+B.h"
+//#import "ViewController+A.h"
 
 #import "FinalClass.h"
 #import <QuickLook/QuickLook.h>
 
-@interface ViewController ()<QLPreviewControllerDataSource, QLPreviewControllerDelegate>
+@interface ViewController ()<QLPreviewControllerDataSource, QLPreviewControllerDelegate> {
+    NSString *myString;
+}
 
 @property (nonatomic, strong) NSString *target;
 @property (nonatomic, copy) void(^testBlock)();
@@ -32,6 +34,7 @@ NSString *testString;
 - (void)testMethod {
 //    testStringConst = @"qee";
     
+    
     //打印对象的内存地址
 //    NSLog(@"testString 内存地址1：%p",@"1234);
     
@@ -47,18 +50,41 @@ NSString *testString;
 //    testString = testConstString;
 }
 
+- (void)autoReleaseTest {
+    @autoreleasepool {
+        NSString *string = [[NSString alloc] initWithFormat:@"abc %@", @"123"];
+        NSLog(@"string: %@", string);
+        myString = string;
+    }
+    NSLog(@"myString: %@", myString);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    NSString *a = [self testMethod];
-    if(0) {
-        NSLog(@"===");
-    } else {
-        NSLog(@"=else=");
+    
+    for (int i = 0; i <= 10; ++i) {
+        NSLog(@"i:%i", i);
     }
+
+    NSLog(@"@@@@");
+    [self performSelector:@selector(autoReleaseTest) withObject:nil afterDelay:1];
     
-    int i = 10;
-    NSLog(@"%i", (i == 10) && 3);
+//    [ViewController classTrace];
+//
+//    [UIViewController classTrace];
+//
+//    [self trace];
     
+//    NSString *a = [self testMethod];
+//    if(0) {
+//        NSLog(@"===");
+//    } else {
+//        NSLog(@"=else=");
+//    }
+//
+//    int i = 10;
+//    NSLog(@"%i", (i == 10) && 3);
+//
 //    NSMutableString *mStr = [@"123" mutableCopy];
 //    self.target = mStr;
 //    [mStr appendString:@"456"];
@@ -172,8 +198,12 @@ NSString *testString;
     // Dispose of any resources that can be recreated.
 }
 
-//- (void)trace {
-//    NSLog(@"ViewController");
-//}
+- (void)trace {
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+}
+
++ (void)classTrace {
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+}
 
 @end

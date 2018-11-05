@@ -10,6 +10,10 @@
 
 @implementation ViewController(B)
 
++ (void)classTrace {
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+}
+
 - (void)trace {
     NSLog(@"%s", __PRETTY_FUNCTION__);
 }

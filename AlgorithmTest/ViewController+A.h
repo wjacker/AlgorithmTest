@@ -10,6 +10,7 @@
 
 @interface ViewController(A)
 
++ (void)classTrace;
 - (void)trace;
 
 @end

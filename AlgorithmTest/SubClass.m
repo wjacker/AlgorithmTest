@@ -10,10 +10,10 @@
 
 @implementation SubClass
 
-+(void)load {
-//    [super load];
-    NSLog(@"%s", __PRETTY_FUNCTION__);
-}
+//+(void)load {
+////    [super load];
+//    NSLog(@"%s", __PRETTY_FUNCTION__);
+//}
 
 +(void)initialize {
 //    [super initialize];

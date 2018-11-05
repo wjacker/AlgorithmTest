@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlgorithmTest/ViewController.m"
-            timestampString = "549531942.619576"
+            filePath = "AlgorithmTest/LessStepTestViewController.swift"
+            timestampString = "559127074.4883029"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "-testMethod"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "minStepChange(startIndex:source:dest:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlgorithmTest/ViewController.m"
-            timestampString = "549531942.619949"
+            filePath = "AlgorithmTest/LessStepTestViewController.swift"
+            timestampString = "559127074.489265"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "-testMethod"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "minStepChange(startIndex:source:dest:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

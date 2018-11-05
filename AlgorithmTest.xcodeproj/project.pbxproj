@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		041F21791EE6ED0D002CE54D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 041F21781EE6ED0D002CE54D /* main.m */; };
 		041F217C1EE6ED0D002CE54D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 041F217B1EE6ED0D002CE54D /* AppDelegate.m */; };
-		041F217F1EE6ED0D002CE54D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041F217E1EE6ED0D002CE54D /* ViewController.m */; };
+		041F217F1EE6ED0D002CE54D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041F217E1EE6ED0D002CE54D /* ViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		041F21821EE6ED0D002CE54D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041F21801EE6ED0D002CE54D /* Main.storyboard */; };
 		041F21841EE6ED0D002CE54D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041F21831EE6ED0D002CE54D /* Assets.xcassets */; };
 		041F21871EE6ED0D002CE54D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041F21851EE6ED0D002CE54D /* LaunchScreen.storyboard */; };
@@ -23,15 +23,15 @@
 		044D1F6D20B3D6C7008ED45B /* SuperClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D1F6C20B3D6C7008ED45B /* SuperClass.m */; };
 		044D1F7020B3D6E1008ED45B /* SubClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D1F6F20B3D6E1008ED45B /* SubClass.m */; };
 		044D1F7320B3D705008ED45B /* FinalClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D1F7220B3D705008ED45B /* FinalClass.m */; };
-		044D1F7420B3D9D8008ED45B /* ViewController+B.m in Sources */ = {isa = PBXBuildFile; fileRef = 04214B9E1FDFD932009C5892 /* ViewController+B.m */; };
-		044D1F7520B3DA1B008ED45B /* ViewController+A.m in Sources */ = {isa = PBXBuildFile; fileRef = 04214B9C1FDFD87F009C5892 /* ViewController+A.m */; };
 		044D1F7820B3DBF0008ED45B /* SuperClass+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D1F7720B3DBF0008ED45B /* SuperClass+Category.m */; };
 		044D1F7B20B3DC70008ED45B /* SubClass+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 044D1F7A20B3DC70008ED45B /* SubClass+Category.m */; };
+		0451CC2020E085B400665D6E /* ViewController+A.m in Sources */ = {isa = PBXBuildFile; fileRef = 04214B9C1FDFD87F009C5892 /* ViewController+A.m */; };
+		0451CC2120E085B400665D6E /* ViewController+B.m in Sources */ = {isa = PBXBuildFile; fileRef = 04214B9E1FDFD932009C5892 /* ViewController+B.m */; };
 		049AFEEC1F95D444004B0A09 /* StraightInsertionSortTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 049AFEEB1F95D444004B0A09 /* StraightInsertionSortTest.m */; };
 		04AD24591F3AADB200E5BBB2 /* SwiftTestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD24581F3AADB200E5BBB2 /* SwiftTestClass.swift */; };
 		04AD245B1F3AB03900E5BBB2 /* SwiftTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD245A1F3AB03900E5BBB2 /* SwiftTestViewController.swift */; };
 		04B4447B203EC7BF0096570A /* QuickSortTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B4447A203EC7BF0096570A /* QuickSortTest.m */; };
-		04E586741F467C79004C0E67 /* RuntimeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E586731F467C79004C0E67 /* RuntimeTestViewController.swift */; };
+		04E586741F467C79004C0E67 /* LessStepTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E586731F467C79004C0E67 /* LessStepTestViewController.swift */; };
 		04E586761F467C9D004C0E67 /* RuntimeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E586751F467C9D004C0E67 /* RuntimeClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -87,7 +87,7 @@
 		04AD24581F3AADB200E5BBB2 /* SwiftTestClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTestClass.swift; sourceTree = "<group>"; };
 		04AD245A1F3AB03900E5BBB2 /* SwiftTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTestViewController.swift; sourceTree = "<group>"; };
 		04B4447A203EC7BF0096570A /* QuickSortTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickSortTest.m; sourceTree = "<group>"; };
-		04E586731F467C79004C0E67 /* RuntimeTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeTestViewController.swift; sourceTree = "<group>"; };
+		04E586731F467C79004C0E67 /* LessStepTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessStepTestViewController.swift; sourceTree = "<group>"; };
 		04E586751F467C9D004C0E67 /* RuntimeClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,7 +162,7 @@
 				041F21851EE6ED0D002CE54D /* LaunchScreen.storyboard */,
 				041F21881EE6ED0D002CE54D /* Info.plist */,
 				041F21771EE6ED0D002CE54D /* Supporting Files */,
-				04E586731F467C79004C0E67 /* RuntimeTestViewController.swift */,
+				04E586731F467C79004C0E67 /* LessStepTestViewController.swift */,
 			);
 			path = AlgorithmTest;
 			sourceTree = "<group>";
@@ -322,14 +322,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				041F217F1EE6ED0D002CE54D /* ViewController.m in Sources */,
-				04E586741F467C79004C0E67 /* RuntimeTestViewController.swift in Sources */,
+				0451CC2020E085B400665D6E /* ViewController+A.m in Sources */,
+				0451CC2120E085B400665D6E /* ViewController+B.m in Sources */,
+				044239271FE0BB7800DCCF99 /* UIViewController+A.m in Sources */,
+				04E586741F467C79004C0E67 /* LessStepTestViewController.swift in Sources */,
 				04AD245B1F3AB03900E5BBB2 /* SwiftTestViewController.swift in Sources */,
 				042F95E41FB185A2007E88AA /* MyQLPreviewController.m in Sources */,
-				044D1F7520B3DA1B008ED45B /* ViewController+A.m in Sources */,
-				044D1F7420B3D9D8008ED45B /* ViewController+B.m in Sources */,
+				041F217F1EE6ED0D002CE54D /* ViewController.m in Sources */,
 				044D1F7820B3DBF0008ED45B /* SuperClass+Category.m in Sources */,
-				044239271FE0BB7800DCCF99 /* UIViewController+A.m in Sources */,
 				044D1F7320B3D705008ED45B /* FinalClass.m in Sources */,
 				044D1F7B20B3DC70008ED45B /* SubClass+Category.m in Sources */,
 				044D1F6D20B3D6C7008ED45B /* SuperClass.m in Sources */,
@@ -479,7 +479,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = LCJ4B5EHS7;
 				INFOPLIST_FILE = AlgorithmTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dcf.iqx.AlgorithmTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,7 +496,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = LCJ4B5EHS7;
 				INFOPLIST_FILE = AlgorithmTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dcf.iqx.AlgorithmTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
